@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '<h1>Flask application!</h1>'
+    return render_template("index.html")
 
 
 @app.route('/university')
